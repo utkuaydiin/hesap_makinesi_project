@@ -1,0 +1,16 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "Node.js backend for Internet Computer project",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "build": "echo \"Building the frontend...\" && exit 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
