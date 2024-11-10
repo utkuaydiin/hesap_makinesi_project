@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hesap Makinesi</title>
+  <script type="module">
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOM fully loaded');
+      document.getElementById('connection-status').textContent = 'Page loaded, initializing...';
+    });
+  </script>
 </head>
 <body>
   <h1>Hesap Makinesi</h1>
   
   <input id="inputNumber" type="number" placeholder="Enter number">
+  
   <button id="addButton">Toplama</button>
   <button id="subButton">Çıkarma</button>
   <button id="mulButton">Çarpma</button>
@@ -16,7 +23,9 @@
   <button id="clearButton">Temizle</button>
   
   <p id="result">Sonuç: 0</p>
+  <p id="connection-status" style="color: red;"></p>
 
-  <script type="module" src="main.js"></script>
+
+  <script type="module" src="src/hesap_makinesi_project_frontend/assets/main.js"></script>
 </body>
 </html>
